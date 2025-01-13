@@ -1,0 +1,36 @@
+.module-deliverables.svelte-1f8l6ar.svelte-1f8l6ar {
+    --progress: 0%
+}
+
+.module-deliverables.svelte-1f8l6ar .content-grid.svelte-1f8l6ar {
+    grid-template-rows: auto auto 1fr auto
+}
+
+@media (min-width: 1024px) {
+    .module-deliverables.svelte-1f8l6ar .content-grid.svelte-1f8l6ar {
+        grid-template-rows:auto
+    }
+}
+
+.module-deliverables.svelte-1f8l6ar .progressbar.svelte-1f8l6ar:before {
+    width: var(--progress);
+    height: .125rem
+}
+
+@media (min-width: 1024px) {
+    .module-deliverables.svelte-1f8l6ar .progressbar.svelte-1f8l6ar:before {
+        height:var(--progress);
+        width: .125rem
+    }
+}
+
+.module-splash.svelte-1w6gcc6 h1.svelte-1w6gcc6 {
+    position: absolute;
+    clip: rect(1px,1px,1px,1px);
+    clip-path: inset(0px 0px 99.9% 99.9%);
+    overflow: hidden;
+    height: 1px;
+    width: 1px;
+    padding: 0;
+    border: 0
+}
