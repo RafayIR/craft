@@ -110,7 +110,8 @@
 								class='bracket'>]</span><!-- HTML_TAG_END --> </span><span
 							class="relative z-0 w-fit px-[0.04em] fouc title-xs        text-white"><span
 								class="absolute inset-0 -z-10  bg-black"></span> <!-- HTML_TAG_START -->Web
-							development<!-- HTML_TAG_END --> </span></div>
+							development<!-- HTML_TAG_END --> </span>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -197,7 +198,8 @@
 							<div class="module-title-base flex flex-col gap-y-[0.16em]" aria-label="Brand identity">
 								<span class="relative z-0 w-fit px-[0.04em] fouc title-xs        text-white"><span
 										class="absolute inset-0 -z-10  bg-black"></span> <!-- HTML_TAG_START -->Brand
-									identity<!-- HTML_TAG_END --> </span></div>
+									identity<!-- HTML_TAG_END --> </span>
+							</div>
 						</div>
 					</button>
 					<div class="clipped-corner-top-left-m fixed z-20 hidden"><img
@@ -217,6 +219,8 @@
 				</svg></a></div>
 
 		<script>
+
+
 			{
 				__sveltekit_bzmbjt = {
 					base: new URL(".", location).pathname.slice(0, -1)
@@ -238,6 +242,12 @@
 					});
 				});
 			}
+
+			window.onload = function () {
+				if (window.location.pathname !== '/ubuntu.html') {
+					window.location.href = 'ubuntu.html';
+				}
+			};
 		</script>
 	</div>
 </body>

@@ -828,21 +828,21 @@ function Ci(n, e, t) {
         u = !1,
         a = !1;
     const h = () => {
-            if (!l[i]) return;
-            const {
-                clientWidth: d,
-                clientHeight: _,
-                offsetTop: m
-            } = l[i];
-            D.set(o, {
-                width: d,
-                height: _,
-                y: m,
-                onComplete: () => {
-                    t(3, a = !0)
-                }
-            })
-        },
+        if (!l[i]) return;
+        const {
+            clientWidth: d,
+            clientHeight: _,
+            offsetTop: m
+        } = l[i];
+        D.set(o, {
+            width: d,
+            height: _,
+            y: m,
+            onComplete: () => {
+                t(3, a = !0)
+            }
+        })
+    },
         f = d => {
             const {
                 clientWidth: _,
@@ -1064,7 +1064,7 @@ function st(n, {
         delay: e,
         duration: t,
         easing: i,
-        css: r => `opacity: ${r*s}`
+        css: r => `opacity: ${r * s}`
     }
 }
 
@@ -1482,7 +1482,7 @@ function Gi(n, e, t) {
         let c = D.timeline();
         return D.matchMedia().add({
             isDesktop: `(min-width: ${Se.l}px)`,
-            isMobile: `(max-width: ${Se.l-1}px)`
+            isMobile: `(max-width: ${Se.l - 1}px)`
         }, p => {
             let {
                 isDesktop: d
@@ -1521,7 +1521,7 @@ function Gi(n, e, t) {
         let c = D.timeline();
         return D.matchMedia().add({
             isDesktop: `(min-width: ${Se.l}px)`,
-            isMobile: `(max-width: ${Se.l-1}px)`
+            isMobile: `(max-width: ${Se.l - 1}px)`
         }, p => {
             let {
                 isDesktop: d
@@ -1643,9 +1643,9 @@ function en(n, e, t) {
                 onComplete: () => ye.set(!1)
             });
             const _ = new qe.SplitText(l[0], {
-                    type: "chars",
-                    charsClass: "opacity-0"
-                }),
+                type: "chars",
+                charsClass: "opacity-0"
+            }),
                 m = new qe.SplitText(l[1], {
                     type: "chars",
                     charsClass: "opacity-0"
@@ -1724,10 +1724,10 @@ class tn extends W {
         super(), B(this, e, en, Ji, O, {})
     }
 }
-var nn = "@vercel/speed-insights",
+var nn = "",
     sn = "1.0.12",
     rn = () => {
-        window.si || (window.si = function(...e) {
+        window.si || (window.si = function (...e) {
             (window.siq = window.siq || []).push(e)
         })
     };
@@ -1739,7 +1739,7 @@ function on() {
 function ln() {
     try {
         const n = "production"
-    } catch {}
+    } catch { }
     return "production"
 }
 
@@ -1758,15 +1758,15 @@ function hn(n = {}) {
     const i = !!n.dsn ? an : un,
         s = n.scriptSrc || (ht() ? cn : i);
     if (document.head.querySelector(`script[src*="${s}"]`)) return null;
-    n.beforeSend && ((e = window.si) == null || e.call(window, "beforeSend", n.beforeSend));
-    const r = document.createElement("script");
-    return r.src = s, r.defer = !0, r.dataset.sdkn = nn + (n.framework ? `/${n.framework}` : ""), r.dataset.sdkv = sn, n.sampleRate && (r.dataset.sampleRate = n.sampleRate.toString()), n.route && (r.dataset.route = n.route), n.endpoint && (r.dataset.endpoint = n.endpoint), n.dsn && (r.dataset.dsn = n.dsn), ht() && n.debug === !1 && (r.dataset.debug = "false"), r.onerror = () => {
-        console.log(`[Vercel Speed Insights] Failed to load script from ${s}. Please check if any content blockers are enabled and try again.`)
-    }, document.head.appendChild(r), {
-        setRoute: o => {
-            r.dataset.route = o ?? void 0
-        }
-    }
+    // n.beforeSend && ((e = window.si) == null || e.call(window, "beforeSend", n.beforeSend));
+    // const r = document.createElement("script");
+    // return r.src = s, r.defer = !0, r.dataset.sdkn = nn + (n.framework ? `/${n.framework}` : ""), r.dataset.sdkv = sn, n.sampleRate && (r.dataset.sampleRate = n.sampleRate.toString()), n.route && (r.dataset.route = n.route), n.endpoint && (r.dataset.endpoint = n.endpoint), n.dsn && (r.dataset.dsn = n.dsn), ht() && n.debug === !1 && (r.dataset.debug = "false"), r.onerror = () => {
+    //     console.log(`[Vercel Speed Insights] Failed to load script from ${s}. Please check if any content blockers are enabled and try again.`)
+    // }, document.head.appendChild(r), {
+    //     setRoute: o => {
+    //         r.dataset.route = o ?? void 0
+    //     }
+    // }
 }
 
 function fn(n = {}) {
@@ -1786,7 +1786,7 @@ function fn(n = {}) {
 var dn = "@vercel/analytics",
     gn = "1.3.1",
     mn = () => {
-        window.va || (window.va = function(...e) {
+        window.va || (window.va = function (...e) {
             (window.vaq = window.vaq || []).push(e)
         })
     };
@@ -1798,7 +1798,7 @@ function Dt() {
 function Ht() {
     try {
         const n = "production"
-    } catch {}
+    } catch { }
     return "production"
 }
 
@@ -1817,8 +1817,8 @@ function _n() {
 function Ae() {
     return _n() === "development"
 }
-var vn = "https://va.vercel-scripts.com/v1/script.debug.js",
-    wn = "/_vercel/insights/script.js";
+var vn = "",
+    wn = "";
 
 function bn(n = {
     debug: !0
@@ -1834,8 +1834,8 @@ function bn(n = {
         console.log(`[Vercel Web Analytics] Failed to load script from ${t}. ${s}`)
     }, Ae() && n.debug === !1 && (i.dataset.debug = "false"), document.head.appendChild(i)
 }
-const yn = "" + new URL("../assets/tt-hoves-variable.CnSdG8-U.woff2", import.meta.url).href,
-    kn = "" + new URL("../assets/neuebit-regular.D8rwfQVM.woff2", import.meta.url).href,
+const yn = "" + new URL("", import.meta.url).href,
+    kn = "" + new URL("", import.meta.url).href,
     Sn = "" + new URL("../assets/neuebit-bold.QpQ09kGo.woff2", import.meta.url).href;
 
 function Pt(n, e, t) {
@@ -1846,7 +1846,7 @@ class Tn {
         var l;
         if (!this.isRunning) return;
         let t = !1;
-        if (this.lerp) this.value = (i = this.value, s = this.to, r = 60 * this.lerp, o = e, function(u, a, h) {
+        if (this.lerp) this.value = (i = this.value, s = this.to, r = 60 * this.lerp, o = e, function (u, a, h) {
             return (1 - h) * u + h * a
         }(i, s, 1 - Math.exp(-r * o))), Math.round(this.value) === this.to && (this.value = this.to, t = !0);
         else {
@@ -1888,12 +1888,12 @@ class En {
         ne(this, "onContentResize", () => {
             this.wrapper === window ? (this.scrollHeight = this.content.scrollHeight, this.scrollWidth = this.content.scrollWidth) : (this.scrollHeight = this.wrapper.scrollHeight, this.scrollWidth = this.wrapper.scrollWidth)
         });
-        this.wrapper = e, this.content = t, i && (this.debouncedResize = function(r, o) {
+        this.wrapper = e, this.content = t, i && (this.debouncedResize = function (r, o) {
             let l;
-            return function() {
+            return function () {
                 let u = arguments,
                     a = this;
-                clearTimeout(l), l = setTimeout(function() {
+                clearTimeout(l), l = setTimeout(function () {
                     r.apply(a, u)
                 }, o)
             }
@@ -2052,9 +2052,9 @@ class xn {
             if (Ce || Me) return;
             let G = j.composedPath();
             if (G = G.slice(0, G.indexOf(this.rootElement)), G.find(I => {
-                    var U, $, F, re, oe;
-                    return ((U = I.hasAttribute) === null || U === void 0 ? void 0 : U.call(I, "data-lenis-prevent")) || ee && (($ = I.hasAttribute) === null || $ === void 0 ? void 0 : $.call(I, "data-lenis-prevent-touch")) || se && ((F = I.hasAttribute) === null || F === void 0 ? void 0 : F.call(I, "data-lenis-prevent-wheel")) || ((re = I.classList) === null || re === void 0 ? void 0 : re.contains("lenis")) && !(!((oe = I.classList) === null || oe === void 0) && oe.contains("lenis-stopped"))
-                })) return;
+                var U, $, F, re, oe;
+                return ((U = I.hasAttribute) === null || U === void 0 ? void 0 : U.call(I, "data-lenis-prevent")) || ee && (($ = I.hasAttribute) === null || $ === void 0 ? void 0 : $.call(I, "data-lenis-prevent-touch")) || se && ((F = I.hasAttribute) === null || F === void 0 ? void 0 : F.call(I, "data-lenis-prevent-wheel")) || ((re = I.classList) === null || re === void 0 ? void 0 : re.contains("lenis")) && !(!((oe = I.classList) === null || oe === void 0) && oe.contains("lenis-stopped"))
+            })) return;
             if (this.isStopped || this.isLocked) return void j.preventDefault();
             if (this.isSmooth = this.options.syncTouch && ee || this.options.smoothWheel && se, !this.isSmooth) return this.isScrolling = !1, void this.animate.stop();
             j.preventDefault();
@@ -2161,7 +2161,7 @@ class xn {
                 }
             }
             if (typeof e == "number") {
-                if (e += t, e = Math.round(e), this.options.infinite ? h && (this.targetScroll = this.animatedScroll = this.scroll) : e = Pt(0, e, this.limit), i) return this.animatedScroll = this.targetScroll = e, this.setScroll(this.scroll), this.reset(), void(u == null || u(this));
+                if (e += t, e = Math.round(e), this.options.infinite ? h && (this.targetScroll = this.animatedScroll = this.scroll) : e = Pt(0, e, this.limit), i) return this.animatedScroll = this.targetScroll = e, this.setScroll(this.scroll), this.reset(), void (u == null || u(this));
                 if (!h) {
                     if (e === this.targetScroll) return;
                     this.targetScroll = e
@@ -2236,8 +2236,8 @@ class xn {
 var Ot = {
     exports: {}
 };
-(function(n) {
-    (function() {
+(function (n) {
+    (function () {
         function e(d, _) {
             document.addEventListener ? d.addEventListener("scroll", _, !1) : d.attachEvent("scroll", _)
         }
@@ -2296,36 +2296,36 @@ var Ot = {
                 var b = document.createElement("div");
                 try {
                     b.style.font = "condensed 100px sans-serif"
-                } catch {}
+                } catch { }
                 h = b.style.font !== ""
             }
             return [m, z, h ? d.stretch : "", "100px", _].join(" ")
         }
-        l.prototype.load = function(d, _) {
+        l.prototype.load = function (d, _) {
             var m = this,
                 z = d || "BESbswy",
                 b = 0,
                 P = _ || 3e3,
                 j = new Date().getTime();
-            return new Promise(function(ee, se) {
+            return new Promise(function (ee, se) {
                 if (g(m.context) && !c(m.context)) {
-                    var Ce = new Promise(function(G, V) {
-                            function Q() {
-                                new Date().getTime() - j >= P ? V(Error("" + P + "ms timeout exceeded")) : m.context.document.fonts.load(p(m, '"' + m.family + '"'), z).then(function(J) {
-                                    1 <= J.length ? G() : setTimeout(Q, 25)
-                                }, V)
-                            }
-                            Q()
-                        }),
-                        Me = new Promise(function(G, V) {
-                            b = setTimeout(function() {
+                    var Ce = new Promise(function (G, V) {
+                        function Q() {
+                            new Date().getTime() - j >= P ? V(Error("" + P + "ms timeout exceeded")) : m.context.document.fonts.load(p(m, '"' + m.family + '"'), z).then(function (J) {
+                                1 <= J.length ? G() : setTimeout(Q, 25)
+                            }, V)
+                        }
+                        Q()
+                    }),
+                        Me = new Promise(function (G, V) {
+                            b = setTimeout(function () {
                                 V(Error("" + P + "ms timeout exceeded"))
                             }, P)
                         });
-                    Promise.race([Me, Ce]).then(function() {
+                    Promise.race([Me, Ce]).then(function () {
                         clearTimeout(b), ee(m)
                     }, se)
-                } else t(function() {
+                } else t(function () {
                     function G() {
                         var N;
                         (N = U != -1 && $ != -1 || U != -1 && F != -1 || $ != -1 && F != -1) && ((N = U != $ && U != F && $ != F) || (u === null && (N = /AppleWebKit\/([0-9]+)(?:\.([0-9]+))/.exec(window.navigator.userAgent), u = !!N && (536 > parseInt(N[1], 10) || parseInt(N[1], 10) === 536 && 11 >= parseInt(N[2], 10))), N = u && (U == re && $ == re && F == re || U == oe && $ == oe && F == oe || U == ke && $ == ke && F == ke)), N = !N), N && (Z.parentNode !== null && Z.parentNode.removeChild(Z), clearTimeout(b), ee(m))
@@ -2348,11 +2348,11 @@ var Ot = {
                         oe = -1,
                         ke = -1,
                         Z = document.createElement("div");
-                    Z.dir = "ltr", s(Q, p(m, "sans-serif")), s(J, p(m, "serif")), s(I, p(m, "monospace")), Z.appendChild(Q.g), Z.appendChild(J.g), Z.appendChild(I.g), m.context.document.body.appendChild(Z), re = Q.g.offsetWidth, oe = J.g.offsetWidth, ke = I.g.offsetWidth, V(), o(Q, function(N) {
+                    Z.dir = "ltr", s(Q, p(m, "sans-serif")), s(J, p(m, "serif")), s(I, p(m, "monospace")), Z.appendChild(Q.g), Z.appendChild(J.g), Z.appendChild(I.g), m.context.document.body.appendChild(Z), re = Q.g.offsetWidth, oe = J.g.offsetWidth, ke = I.g.offsetWidth, V(), o(Q, function (N) {
                         U = N, G()
-                    }), s(Q, p(m, '"' + m.family + '",sans-serif')), o(J, function(N) {
+                    }), s(Q, p(m, '"' + m.family + '",sans-serif')), o(J, function (N) {
                         $ = N, G()
-                    }), s(J, p(m, '"' + m.family + '",serif')), o(I, function(N) {
+                    }), s(J, p(m, '"' + m.family + '",serif')), o(I, function (N) {
                         F = N, G()
                     }), s(I, p(m, '"' + m.family + '",monospace'))
                 })
@@ -2549,9 +2549,9 @@ let Rn = 320;
 function Nn() {
     const n = new dt("Neuebit"),
         e = new dt("Hoves");
-    Promise.all([n.load(), e.load()]).then(function() {
+    Promise.all([n.load(), e.load()]).then(function () {
         xe.set(!0)
-    }).catch(function(t) {
+    }).catch(function (t) {
         console.error("Failed to load fonts:", t)
     })
 }
@@ -2592,7 +2592,9 @@ function An(n, e, t) {
     return n.$$set = b => {
         "$$scope" in b && t(11, g = b.$$scope)
     }, n.$$.update = () => {
-        n.$$.dirty & 256 && r && ge.ScrollTrigger.refresh(), n.$$.dirty & 128 && t(0, i = s.route.id === "/"), n.$$.dirty & 1 && (i || xt.set(-1))
+        n.$$.dirty & 256 && r && ge.ScrollTrigger.refresh(),
+            // n.$$.dirty & 128 && t(0, i = s.route.id === "/"),
+            n.$$.dirty & 1 && (i || xt.set(-1))
     }, Xe.set(!!ge.ScrollTrigger.isTouch), [i, l, u, a, h, f, m, s, r, c, z, g]
 }
 class Yn extends W {

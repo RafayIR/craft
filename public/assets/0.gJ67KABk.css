@@ -430,19 +430,6 @@ img,video {
     font-weight: 700
 }
 
-@font-face {
-    font-family: Neuebit;
-    src: url(./neuebit-regular.D8rwfQVM.woff2) format("woff2");
-    font-display: block;
-    font-weight: 400
-}
-
-@font-face {
-    font-family: Hoves;
-    src: url(./tt-hoves-variable.CnSdG8-U.woff2) format("woff2");
-    font-display: block;
-    font-weight: 1 1000
-}
 
 :root {
     --container-width: calc(100vw - 2 * var(--container-margin));
