@@ -7,6 +7,7 @@
     <link href="./public/assets/0.gJ67KABk.css" rel="stylesheet">
     <link href="./public/assets/2.BmrytFrW.css" rel="stylesheet">
     <link href="./public/assets/index.CCahpbvf.css" rel="stylesheet">
+    <script defer src="/_vercel/insights/script.js"></script>
     <title>CRFTD — Creatieve studio voor branding, websites en event design</title>
     <meta name="theme-color" content="#000000">
     <link rel="preload" href="./public/assets/neuebit-bold.QpQ09kGo.woff2" crossorigin="anonymous" as="font"
@@ -29,7 +30,7 @@
                 %
             </p>
         </div>
-        
+
         <canvas class="pointer-events-none fixed inset-0 z-50 h-screen w-screen mix-blend-difference"></canvas>
 
 
@@ -72,21 +73,21 @@
                                 aria-label="Merk identiteiten Event design Digital experiences">
                                 <span class="relative z-0 w-fit px-[0.04em] fouc title-xs       text-black">
                                     <span class="absolute inset-0 -z-10 bg-white"></span>
-                                    
+
                                     Merk identiteiten
-                                   
+
                                 </span>
                                 <span class="relative z-0 w-fit px-[0.04em] fouc title-xs       text-black">
                                     <span class="absolute inset-0 -z-10 bg-white"></span>
-                                    
+
                                     Event design
-                                   
+
                                 </span>
                                 <span class="relative z-0 w-fit px-[0.04em] fouc title-xs       text-black">
                                     <span class="absolute inset-0 -z-10 bg-white"></span>
-                                    
+
                                     Digital experiences
-                                   
+
                                 </span>
                             </div>
                         </div>
@@ -117,21 +118,21 @@
                         aria-label="Merk identiteiten Event design Digital experiences">
                         <span class="relative z-0 w-fit px-[0.04em] fouc title-xs       text-black">
                             <span class="absolute inset-0 -z-10 bg-white"></span>
-                            
+
                             Merk identiteiten
-                           
+
                         </span>
                         <span class="relative z-0 w-fit px-[0.04em] fouc title-xs       text-black">
                             <span class="absolute inset-0 -z-10 bg-white"></span>
-                            
+
                             Event design
-                           
+
                         </span>
                         <span class="relative z-0 w-fit px-[0.04em] fouc title-xs       text-black">
                             <span class="absolute inset-0 -z-10 bg-white"></span>
-                            
+
                             Digital experiences
-                           
+
                         </span>
                     </div>
                 </div>
@@ -146,9 +147,9 @@
                     <h2 class="module-title-base flex flex-col gap-y-[0.16em]" aria-label="Introductie">
                         <span class="relative z-0 w-fit px-[0.04em] fouc title-xs        text-white">
                             <span class="absolute inset-0 -z-10  bg-black"></span>
-                            
+
                             Introductie
-                           
+
                         </span>
                     </h2>
                     <p class="body-xl">CRFTD is dé creative studio voor branding, websites en event design van
@@ -182,7 +183,7 @@
                 };
 
 
-                const element = document.querySelector('.body-wrapper'); 
+                const element = document.querySelector('.body-wrapper');
 
                 const data = [null, {
                     "type": "data",
@@ -190,7 +191,7 @@
                     "uses": {}
                 }];
 
-                Promise.all([import("/public/entry/start.D0kgK8lS.js"), 
+                Promise.all([import("./public/entry/start.D0kgK8lS.js"),
                 import("./public/entry/app.DWdnLew-.js")]).then(([kit, app]) => {
                     kit.start(app, element, {
                         node_ids: [0, 2],
@@ -204,5 +205,25 @@
         </script>
     </div>
 </body>
+
+<script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.2.0/firebase-app.js";
+
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+        apiKey: "AIzaSyAXaBx8ZeNIasX_d2df-n9PVnfuEMhLsYw",
+        authDomain: "craft-c879b.firebaseapp.com",
+        projectId: "craft-c879b",
+        storageBucket: "craft-c879b.firebasestorage.app",
+        messagingSenderId: "122869877913",
+        appId: "1:122869877913:web:267398226a6b7f1c74fc08"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+</script>
 
 </html>

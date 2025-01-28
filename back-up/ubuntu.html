@@ -219,8 +219,6 @@
 				</svg></a></div>
 
 		<script>
-
-
 			{
 				__sveltekit_bzmbjt = {
 					base: new URL(".", location).pathname.slice(0, -1)
@@ -231,8 +229,8 @@
 				const data = [null, null];
 
 				Promise.all([
-					import("./_app/immutable/entry/start.D0kgK8lS.js"),
-					import("./_app/immutable/entry/app.DWdnLew-.js")
+					import("./public/entry/start.D0kgK8lS.js"),
+					import("./public/entry/app.DWdnLew-.js")
 				]).then(([kit, app]) => {
 					kit.start(app, element, {
 						node_ids: [0, 4],
@@ -243,11 +241,11 @@
 				});
 			}
 
-			window.onload = function () {
-				if (window.location.pathname !== '/ubuntu.html') {
-					window.location.href = 'ubuntu.html';
-				}
-			};
+			// window.onload = function () {
+			// 	if (window.location.pathname !== '/ubuntu.html') {
+			// 		window.location.href = 'ubuntu.html';
+			// 	}
+			// };
 		</script>
 	</div>
 </body>
